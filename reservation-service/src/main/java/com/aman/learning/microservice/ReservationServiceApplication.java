@@ -76,14 +76,6 @@ class MessageReader {
 @RestController
 class MessageController {
 
-	@Value("${message}")
-	public String message;
-
-	@RequestMapping("/message")
-	String message() {
-		return message;
-	}
-
 	@RequestMapping("/reservationsl")
 	List<String> names() {
 		return Arrays.asList("Aman", "John");
